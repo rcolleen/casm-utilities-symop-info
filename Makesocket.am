@@ -1,0 +1,13 @@
+bin_PROGRAMS += _casmutils-symopinfo
+
+_casmutils_symopinfo_SOURCES=\
+						  plugins/casm-utilities-symopinfo/symop-info.cpp\
+						  plugins/casm-utilities-symopinfo/categorize_symop.hh\
+						  plugins/casm-utilities-symopinfo/categorize_symop.cpp\
+						  plugins/casm-utilities-symopinfo/subspace.hh\
+						  plugins/casm-utilities-symopinfo/subspace.cpp\
+						  plugins/casm-utilities-symopinfo/vectorfunctions.hpp\
+						  plugins/casm-utilities-symopinfo/vectorfunctions.cpp
+
+_casmutils_symopinfo_LDADD=\
+						libcasmutils.la
